@@ -5,7 +5,7 @@ def find_hobbyiests(hobbies, hobby):
     for k, v in hobbies.items():
         if hobby in v:
             s.append(k)
-    return s
+    return '\n'.join(str(i) for i in s)
 
 hobbies = {
     "John": ['Piano', 'Puzzles', 'Yoga'],
